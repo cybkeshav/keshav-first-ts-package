@@ -1,6 +1,6 @@
 {
   "name": "keshav-first-ts-package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "It is to test first package creation and publishing it.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
