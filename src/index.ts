@@ -18,6 +18,10 @@ export class CfcHttpService {
         this.headers.append('Content-Type', 'application/json');
     }
 
+    checkServiceIsAlive(text:string){
+return `Service is ${text}`;
+    }
+
     setAutorisationHeader(){
         let httpHeaders = this.headers;
         
