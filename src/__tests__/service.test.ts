@@ -1,4 +1,4 @@
-import { CfcHttpService } from '../index';
+import { MyHttpService } from '../index';
 import { HttpClient } from '@angular/common/http';
 
 describe('Test suit', () => {
@@ -19,7 +19,7 @@ describe('Test suit', () => {
       checkServiceIsAlive: jest.fn(),
     }));
     const mock = new Mock();
-    const instance = new CfcHttpService(mock);
+    const instance = new MyHttpService(mock);
     //instance.checkServiceIsAlive('alive');
 
     expect(instance.checkServiceIsAlive('alive')).toBe('Service is alive');

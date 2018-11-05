@@ -5,18 +5,16 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
 @Injectable()
-export class CfcHttpService {
+export class MyHttpService {
   public cfBaseUrl = '';
   public cfBaseIdentityUrl = '';
   public enableAuthentication = false;
   public cfToken = '';
-  public httpClient : any;
   private headers: any;
   private options: any;
 
-  constructor(private http: HttpClient) {
+  constructor(private httpClient: HttpClient) {
     this.headers = new HttpHeaders();
-    this.httpClient=http;
     this.headers.append('Content-Type', 'application/json');
   }
 
