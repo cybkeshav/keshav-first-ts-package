@@ -10,12 +10,13 @@ export class CfcHttpService {
   public cfBaseIdentityUrl = '';
   public enableAuthentication = false;
   public cfToken = '';
+  public httpClient : any;
   private headers: any;
   private options: any;
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private http: HttpClient) {
     this.headers = new HttpHeaders();
-
+    this.httpClient=http;
     this.headers.append('Content-Type', 'application/json');
   }
 
